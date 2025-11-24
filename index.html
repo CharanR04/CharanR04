@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charan Selva Dhanush | AI & ML Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-dot"></span>
+        <span>Charan Selva Dhanush</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="research.html">Research</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1 class="page-title">Hi, I'm Charan — AI &amp; ML Researcher in training.</h1>
+      <p class="page-subtitle">
+        Final-year Computer Science (AI &amp; ML) student at Chennai Institute of Technology.
+        I enjoy building interpretable models that explain complex relationships in vision,
+        language, and time-series data.
+      </p>
+
+      <div class="card">
+        <p>
+          My work currently spans multimodal Visual Question Answering, forecasting with LSTMs,
+          and applying deep learning to additive manufacturing. I care about models that not only
+          perform well, but can also explain why they behave the way they do.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Computer Vision</span>
+          <span class="chip">Natural Language Processing</span>
+          <span class="chip">Multimodal AI</span>
+          <span class="chip">Time-series Forecasting</span>
+          <span class="chip">Interpretable Models</span>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn btn-primary" href="about.html">More about me</a>
+          <a class="btn btn-ghost" href="projects.html">View projects</a>
+          <a class="btn btn-ghost" href="assets/Resume.pdf" target="_blank" rel="noopener noreferrer">
+            Download CV
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/CharanR04" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><span></span> Highlights</div>
+      <p class="section-desc">A quick snapshot of my recent work and experience.</p>
+
+      <div class="grid">
+        <div class="card">
+          <strong>Research Intern – NIT Trichy</strong><br />
+          Multimodal VQA, AI + IoT soil saturation control, and a Unity-based tumour mapping interface.
+          <div class="chip-row">
+            <span class="chip">VQA</span><span class="chip">Unity</span><span class="chip">IoT</span>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Research Intern – UTAR, Malaysia</strong><br />
+          Systematic review and multimodal transformer concepts for stock market forecasting.
+          <div class="chip-row">
+            <span class="chip">Transformers</span><span class="chip">Finance</span>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Water Supply &amp; Demand Forecasting</strong><br />
+          LSTM models and dashboards to forecast water consumption patterns with high accuracy.
+          <div class="chip-row">
+            <span class="chip">LSTM</span><span class="chip">Time-series</span>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Additive Manufacturing &amp; 3D Printing</strong><br />
+          Deep learning for predicting compressive strength and detecting layer defects.
+          <div class="chip-row">
+            <span class="chip">3D Printing</span><span class="chip">Computer Vision</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Charan Selva Dhanush. All rights reserved.</div>
+    <div>Built with HTML &amp; CSS • GitHub Pages</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

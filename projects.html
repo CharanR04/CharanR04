@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Charan Selva Dhanush</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-dot"></span>
+        <span>Charan Selva Dhanush</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="research.html">Research</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1 class="page-title">Projects</h1>
+      <p class="page-subtitle">
+        Selected projects spanning time-series forecasting, multimodal AI, and computer vision.
+      </p>
+
+      <div class="card">
+        <strong>Remote Sensing &amp; Monitoring Soil Moisture</strong>
+        <p>
+          Designed an ESP32-based IoT system to monitor soil moisture and maintain it within
+          safe ranges, helping to protect structural foundations. The system logs data for
+          analysis and integrates with control logic for automated actuation.
+        </p>
+        <div class="chip-row">
+          <span class="chip">ESP32</span><span class="chip">IoT</span>
+          <span class="chip">Sensors</span><span class="chip">Python</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <strong>Water Supply &amp; Demand Forecasting</strong>
+        <p>
+          Built LSTM-based models to forecast water supply and demand patterns. Analyzed
+          seasonality, consumption behaviour, and anomalies; visualized results in a dashboard
+          to support planning and decision-making.
+        </p>
+        <div class="chip-row">
+          <span class="chip">LSTM</span><span class="chip">Time-series</span>
+          <span class="chip">Data Visualization</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <strong>Visual Bot – Multimodal VQA for Accessibility</strong>
+        <p>
+          Developed a pipeline that takes an image and a natural language query, then returns
+          context-aware answers. Explored transformer-based VQA architectures and transfer
+          learning (ULMFiT-style ideas) for domain adaptation.
+        </p>
+        <div class="chip-row">
+          <span class="chip">VQA</span><span class="chip">Transformers</span>
+          <span class="chip">Computer Vision</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <strong>Layer Height Monitoring in 3D Printing</strong>
+        <p>
+          Used computer vision to detect anomalies in 3D printer layer heights. Built a deep
+          learning model to classify defects using images captured during the printing process,
+          improving reliability of the additive manufacturing workflow.
+        </p>
+        <div class="chip-row">
+          <span class="chip">Computer Vision</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">Additive Manufacturing</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Charan Selva Dhanush. All rights reserved.</div>
+    <div>Built with HTML &amp; CSS • GitHub Pages</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
