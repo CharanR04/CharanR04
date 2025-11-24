@@ -1,71 +1,77 @@
-/* =========
-   Base theme
-   ========= */
+/* ============================
+   Modern AI Researcher Theme
+   Deep navy + cyan + neon green
+   ============================ */
+
 :root {
-  --bg: #050816;
-  --bg-elevated: #070b16;
-  --accent: #6366f1;
-  --accent-2: #22c55e;
-  --accent-soft: rgba(99, 102, 241, 0.16);
-  --text-main: #f9fafb;
+  --bg: #020617;
+  --bg-elevated: #02091a;
+  --accent: #22d3ee;      /* cyan */
+  --accent-2: #22c55e;    /* neon green */
+  --accent-soft: rgba(34, 211, 238, 0.16);
+  --text-main: #e5e7eb;
   --text-muted: #9ca3af;
-  --border-subtle: rgba(148, 163, 184, 0.3);
+  --border-subtle: rgba(148, 163, 184, 0.35);
   --max-width: 1040px;
   --radius-lg: 18px;
   --radius-xl: 26px;
   --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.9);
-  --shadow-lift: 0 22px 60px rgba(15, 23, 42, 1);
-  --transition-fast: 180ms ease-out;
+  --shadow-lift: 0 24px 70px rgba(15, 23, 42, 1);
+  --transition-fast: 160ms ease-out;
   --transition-med: 220ms cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-/* Smooth global scroll, but respect reduced motion */
+/* Global behaviour */
+
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 }
 
-/* =========
+/* ============================
    Body / background
-   ========= */
+   ============================ */
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   background:
-    radial-gradient(circle at 10% -20%, rgba(56, 189, 248, 0.08), transparent 55%),
-    radial-gradient(circle at 90% -20%, rgba(129, 140, 248, 0.15), transparent 50%),
-    radial-gradient(circle at 50% 120%, rgba(248, 250, 252, 0.02), transparent 60%),
-    #020617;
+    radial-gradient(circle at 10% -20%, rgba(34, 211, 238, 0.18), transparent 60%),
+    radial-gradient(circle at 90% -10%, rgba(45, 212, 191, 0.16), transparent 55%),
+    radial-gradient(circle at 50% 120%, rgba(15, 23, 42, 0.95), #020617);
   color: var(--text-main);
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
 
-/* Subtle floating particles using ::before */
+/* Subtle layered glow overlay */
+
 body::before {
   content: "";
-  pointer-events: none;
   position: fixed;
   inset: 0;
-  opacity: 0.4;
-  background-image:
-    radial-gradient(circle at 10% 20%, rgba(148, 163, 184, 0.08) 0, transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(129, 140, 248, 0.12) 0, transparent 60%);
+  pointer-events: none;
   mix-blend-mode: screen;
+  opacity: 0.45;
+  background-image:
+    radial-gradient(circle at 15% 30%, rgba(148, 163, 184, 0.12) 0, transparent 55%),
+    radial-gradient(circle at 80% 70%, rgba(34, 211, 238, 0.16) 0, transparent 60%);
   z-index: -1;
 }
 
-/* =========
+/* ============================
    Layout
-   ========= */
+   ============================ */
 
 main {
   max-width: var(--max-width);
@@ -84,25 +90,25 @@ main {
   font-size: 0.95rem;
   color: var(--text-muted);
   margin-bottom: 24px;
-  max-width: 700px;
+  max-width: 720px;
 }
 
-/* =========
+/* ============================
    Navbar
-   ========= */
+   ============================ */
 
 header {
   position: sticky;
   top: 0;
   z-index: 30;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(18px);
   background: linear-gradient(
     to bottom,
     rgba(2, 6, 23, 0.98),
     rgba(2, 6, 23, 0.86),
     transparent
   );
-  border-bottom: 1px solid rgba(31, 41, 55, 0.8);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.95);
 }
 
 .nav-inner {
@@ -117,37 +123,43 @@ header {
 
 .nav-brand {
   font-weight: 600;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
   position: relative;
-  cursor: pointer;
+  cursor: default;
 }
 
-/* Brand dot with glow & breathing animation */
+/* Cyan/green glowing dot */
+
 .nav-dot {
   width: 11px;
   height: 11px;
   border-radius: 999px;
-  background: radial-gradient(circle at 30% 30%, #a5b4fc, #4f46e5);
-  box-shadow: 0 0 14px rgba(99, 102, 241, 0.9);
-  animation: pulseDot 1.8s ease-in-out infinite;
+  background: radial-gradient(circle at 30% 30%, #a5f3fc, var(--accent));
+  box-shadow:
+    0 0 12px rgba(34, 211, 238, 0.95),
+    0 0 26px rgba(34, 197, 94, 0.75);
+  animation: pulseDot 1.9s ease-in-out infinite;
 }
 
-/* Tiny sheen when hovering over brand */
+/* Faint halo around name on hover */
+
 .nav-brand::after {
   content: "";
   position: absolute;
-  inset: -2px;
+  inset: -4px;
   border-radius: 999px;
-  background: radial-gradient(circle at 0% 0%, rgba(148, 163, 184, 0.3), transparent 55%);
+  background: radial-gradient(circle at 0% 0%, rgba(148, 163, 184, 0.26), transparent 60%);
   opacity: 0;
   pointer-events: none;
   transition: opacity 220ms ease-out;
 }
+
 .nav-brand:hover::after {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .nav-links {
@@ -159,7 +171,7 @@ header {
 
 .nav-links a {
   position: relative;
-  padding: 6px 6px;
+  padding: 6px 8px;
   border-radius: 999px;
   border: 1px solid transparent;
   transition:
@@ -170,24 +182,25 @@ header {
 }
 
 /* Animated underline */
+
 .nav-links a::after {
   content: "";
   position: absolute;
-  left: 12%;
-  right: 12%;
+  left: 18%;
+  right: 18%;
   bottom: 1px;
   height: 2px;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent), rgba(56, 189, 248, 0.9));
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
   transform: scaleX(0);
   transform-origin: center;
-  transition: transform 180ms ease-out;
+  transition: transform 160ms ease-out;
 }
 
 .nav-links a:hover {
   color: var(--text-main);
   background: rgba(15, 23, 42, 0.9);
-  border-color: rgba(75, 85, 99, 0.8);
+  border-color: rgba(51, 65, 85, 0.9);
   transform: translateY(-1px);
 }
 .nav-links a:hover::after {
@@ -196,16 +209,16 @@ header {
 
 .nav-links a.active {
   color: var(--text-main);
-  border-color: rgba(129, 140, 248, 0.95);
-  background: rgba(79, 70, 229, 0.25);
+  border-color: rgba(34, 211, 238, 0.9);
+  background: rgba(15, 23, 42, 0.95);
 }
 .nav-links a.active::after {
   transform: scaleX(1);
 }
 
-/* =========
+/* ============================
    Sections / headings
-   ========= */
+   ============================ */
 
 .section {
   margin-bottom: 42px;
@@ -214,17 +227,17 @@ header {
 .section-head {
   font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #e5e7eb;
+  color: #f9fafb;
 }
 
 .section-head span {
-  width: 26px;
+  width: 28px;
   height: 1px;
   background: linear-gradient(90deg, var(--accent), transparent);
 }
@@ -235,11 +248,10 @@ header {
   margin-bottom: 12px;
 }
 
-/* =========
-   Card / grid styling
-   ========= */
+/* ============================
+   Cards / grid
+   ============================ */
 
-/* Glowing border effect using background + mask */
 .card {
   position: relative;
   border-radius: var(--radius-lg);
@@ -248,8 +260,8 @@ header {
   color: #e5e7eb;
 
   background:
-    radial-gradient(circle at 0% 0%, rgba(148, 163, 184, 0.18), transparent 55%),
-    linear-gradient(135deg, #020617, var(--bg-elevated));
+    radial-gradient(circle at 0% 0%, rgba(34, 211, 238, 0.16), transparent 60%),
+    linear-gradient(135deg, var(--bg-elevated), #020617);
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-soft);
 
@@ -261,58 +273,62 @@ header {
     background 220ms ease-out;
 }
 
+/* Subtle cyan/green edge glow on hover */
+
 .card::before {
   content: "";
   position: absolute;
   inset: -1px;
   border-radius: inherit;
   background: conic-gradient(
-    from 180deg,
-    rgba(96, 165, 250, 0.5),
-    rgba(167, 139, 250, 0.7),
-    rgba(52, 211, 153, 0.5),
-    rgba(96, 165, 250, 0.5)
+    from 200deg,
+    rgba(34, 211, 238, 0.8),
+    rgba(16, 185, 129, 0.7),
+    rgba(56, 189, 248, 0.8),
+    rgba(34, 211, 238, 0.8)
   );
   opacity: 0;
   z-index: -1;
   transition: opacity 260ms ease-out;
+  padding: 1px;
   mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
   -webkit-mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
-  padding: 1px;
 }
 
-/* Hover: lift, glow, slight tilt based on cursor */
 .card:hover {
   transform: translateY(-4px);
-  border-color: rgba(129, 140, 248, 0.9);
+  border-color: rgba(34, 211, 238, 0.9);
   box-shadow: var(--shadow-lift);
   background:
-    radial-gradient(circle at 0% 0%, rgba(129, 140, 248, 0.32), transparent 60%),
+    radial-gradient(circle at 0% 0%, rgba(34, 211, 238, 0.28), transparent 65%),
     linear-gradient(135deg, #020617, #020617);
 }
+
 .card:hover::before {
   opacity: 0.9;
 }
 
-/* Stack of cards spacing */
+/* Stacked cards */
+
 .card + .card {
   margin-top: 12px;
 }
 
-/* Grid layout */
+/* Two-column grid (collapses on mobile) */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
-/* =========
+/* ============================
    Chips & buttons
-   ========= */
+   ============================ */
 
 .chip-row {
   display: flex;
@@ -325,8 +341,8 @@ header {
   font-size: 0.75rem;
   padding: 3px 8px;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.5);
-  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.92);
   color: var(--text-muted);
   position: relative;
   overflow: hidden;
@@ -338,21 +354,22 @@ header {
     transform var(--transition-fast);
 }
 
-/* Chip hover: micro pop + inner glow */
+/* Micro interaction on chip hover */
+
 .chip::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(circle at 30% 0%, rgba(148, 163, 184, 0.4), transparent 60%);
+  background: radial-gradient(circle at 30% 0%, rgba(148, 163, 184, 0.5), transparent 70%);
   opacity: 0;
   transition: opacity 180ms ease-out;
 }
 
 .chip:hover {
   transform: translateY(-1px) scale(1.03);
-  border-color: rgba(129, 140, 248, 0.9);
-  color: #e5e7eb;
+  border-color: rgba(34, 211, 238, 0.9);
+  color: #f9fafb;
 }
 .chip:hover::after {
   opacity: 1;
@@ -386,7 +403,8 @@ header {
     color var(--transition-med);
 }
 
-/* “Shimmer” highlight on hover using pseudo-element */
+/* Shimmer effect */
+
 .btn::before {
   content: "";
   position: absolute;
@@ -398,7 +416,7 @@ header {
   background: linear-gradient(
     120deg,
     transparent 0%,
-    rgba(248, 250, 252, 0.45) 50%,
+    rgba(248, 250, 252, 0.5) 50%,
     transparent 100%
   );
   opacity: 0;
@@ -408,15 +426,15 @@ header {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
-  border-color: rgba(129, 140, 248, 0.95);
-  color: #e5e7eb;
-  box-shadow: 0 14px 40px rgba(79, 70, 229, 0.5);
+  background: linear-gradient(135deg, #0ea5e9, var(--accent));
+  border-color: rgba(34, 211, 238, 0.95);
+  color: #f9fafb;
+  box-shadow: 0 14px 40px rgba(8, 47, 73, 0.9);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 18px 52px rgba(79, 70, 229, 0.85);
+  box-shadow: 0 20px 56px rgba(8, 47, 73, 1);
 }
 .btn-primary:hover::before {
   opacity: 1;
@@ -424,12 +442,13 @@ header {
 }
 
 .btn-ghost {
-  background: rgba(15, 23, 42, 0.78);
+  background: rgba(15, 23, 42, 0.88);
   color: var(--text-muted);
-  border-color: rgba(75, 85, 99, 0.85);
+  border-color: rgba(51, 65, 85, 0.95);
 }
+
 .btn-ghost:hover {
-  background: rgba(31, 41, 55, 0.95);
+  background: rgba(15, 23, 42, 1);
   color: var(--text-main);
   transform: translateY(-1px);
 }
@@ -438,9 +457,9 @@ header {
   transform: translateX(260%) skewX(-20deg);
 }
 
-/* =========
+/* ============================
    Footer
-   ========= */
+   ============================ */
 
 footer {
   max-width: var(--max-width);
@@ -451,23 +470,22 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  border-top: 1px solid rgba(31, 41, 55, 0.9);
+  border-top: 1px solid rgba(15, 23, 42, 0.95);
   margin-top: 36px;
   opacity: 0.92;
 }
 
-/* On hover, tiny color shift */
 footer:hover {
   opacity: 1;
 }
 
-/* =========
+/* ============================
    Responsive
-   ========= */
+   ============================ */
 
 @media (max-width: 800px) {
   main {
-    padding-top: 74px;
+    padding-top: 76px;
   }
   .nav-links {
     display: none;
@@ -484,9 +502,9 @@ footer:hover {
   }
 }
 
-/* =========
+/* ============================
    Animations
-   ========= */
+   ============================ */
 
 @keyframes fadeInUp {
   from {
@@ -502,19 +520,26 @@ footer:hover {
 @keyframes pulseDot {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 14px rgba(129, 140, 248, 0.9);
+    box-shadow:
+      0 0 12px rgba(34, 211, 238, 0.9),
+      0 0 26px rgba(34, 197, 94, 0.7);
   }
   50% {
     transform: scale(1.12);
-    box-shadow: 0 0 22px rgba(129, 140, 248, 1);
+    box-shadow:
+      0 0 20px rgba(34, 211, 238, 1),
+      0 0 40px rgba(34, 197, 94, 0.85);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 14px rgba(129, 140, 248, 0.9);
+    box-shadow:
+      0 0 12px rgba(34, 211, 238, 0.9),
+      0 0 26px rgba(34, 197, 94, 0.7);
   }
 }
 
-/* Reduce animations for users who prefer it */
+/* Respect reduced motion */
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
