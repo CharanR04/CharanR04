@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research | Charan Selva Dhanush</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-dot"></span>
+        <span>Charan Selva Dhanush</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="research.html" class="active">Research</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1 class="page-title">Research Interests</h1>
+      <p class="page-subtitle">
+        I’m interested in building AI systems that are powerful, interpretable, and grounded in
+        real-world applications.
+      </p>
+
+      <div class="card">
+        <strong>Interpretable &amp; Explicit Neural Architectures</strong>
+        <p>
+          I’m working towards models that provide explicit mathematical representations of the
+          relationships they learn, rather than acting as pure black boxes. This includes
+          polynomial-style networks and architectures where the learned mapping between inputs
+          and outputs can be expressed and reasoned about directly.
+        </p>
+        <div class="chip-row">
+          <span class="chip">Interpretable AI</span>
+          <span class="chip">Polynomial Networks</span>
+          <span class="chip">Symbolic-style Reasoning</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <strong>Multimodal AI (Vision + Language + Time-Series)</strong>
+        <p>
+          My internships and projects have pushed me towards multimodal settings: Visual Question
+          Answering, stock market prediction from heterogeneous signals, and interfaces that
+          combine 3D medical imagery with textual/structured data. I’m interested in how
+          transformers and attention mechanisms can fuse modalities while still retaining a
+          level of interpretability.
+        </p>
+        <div class="chip-row">
+          <span class="chip">VQA</span>
+          <span class="chip">Transformers</span>
+          <span class="chip">Multimodal Fusion</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <strong>AI for Physical Systems &amp; Manufacturing</strong>
+        <p>
+          Through my work at the Center for Additive Manufacturing, I’ve seen how AI can help
+          compress complex physical interactions into usable models: predicting strength,
+          detecting printing defects, and optimizing process parameters. I’m interested in
+          extending these ideas to other engineering domains with rich sensor data.
+        </p>
+        <div class="chip-row">
+          <span class="chip">Additive Manufacturing</span>
+          <span class="chip">Time-series + Vision</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <strong>Long-term Goals</strong>
+        <p>
+          My long-term goal is to pursue graduate studies and contribute to core research in
+          machine learning and optimization, especially in directions that make AI more
+          explainable and trustworthy. I want to work at the intersection of theory,
+          architecture design, and practical deployment.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Charan Selva Dhanush. All rights reserved.</div>
+    <div>Built with HTML &amp; CSS • GitHub Pages</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

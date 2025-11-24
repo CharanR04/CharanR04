@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Charan Selva Dhanush</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-dot"></span>
+        <span>Charan Selva Dhanush</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="research.html">Research</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1 class="page-title">About Me</h1>
+      <p class="page-subtitle">
+        Computer Science (AI &amp; ML) undergraduate from Chennai, building towards a
+        research career in interpretable and multimodal AI.
+      </p>
+
+      <div class="card">
+        <p>
+          I'm currently pursuing my B.E. in Computer Science (Artificial Intelligence &amp;
+          Machine Learning) at Chennai Institute of Technology. Over the last few years,
+          I’ve worked across computer vision, natural language processing, and time-series
+          forecasting, mainly through research internships and lab projects.
+        </p>
+        <p>
+          I’m particularly drawn to problems where human intuition, domain knowledge, and
+          data-driven models have to work together: forecasting complex systems, interpreting
+          model decisions, and designing interfaces that make AI more usable.
+        </p>
+        <p>
+          Outside of research, I enjoy exploring deep learning frameworks, tinkering with
+          devices like Raspberry Pi / ESP32, improving my math and physics foundations, and
+          slowly getting better at guitar.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><span></span> Snapshot</div>
+      <div class="grid">
+        <div class="card">
+          <strong>Education</strong><br />
+          B.E. CSE (AI &amp; ML), Chennai Institute of Technology<br />
+          CGPA: 8.09 / 10
+          <div class="chip-row">
+            <span class="chip">2022 – 2026</span>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Research Internships</strong><br />
+          NIT Trichy (2 terms), UTAR Malaysia<br />
+          Focus: VQA, AI + IoT, forecasting.
+        </div>
+        <div class="card">
+          <strong>Areas I enjoy</strong><br />
+          Multimodal AI, neural architecture design, model interpretability,
+          and deploying models for real-world use.
+        </div>
+        <div class="card">
+          <strong>Tools I use</strong><br />
+          PyTorch, TensorFlow, Hugging Face, OpenCV, Python, C, React, and more.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Charan Selva Dhanush. All rights reserved.</div>
+    <div>Built with HTML &amp; CSS • GitHub Pages</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
