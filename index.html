@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Charan Selva Dhanush R — Data Scientist & AI Researcher</title>
-  <meta name="description" content="Portfolio of Charan Selva Dhanush R — Data Scientist, CEO at Intinf, specializing in White Box AI and Polynomial Neural Networks." />
+  <title>Charan Selva Dhanush R — AI Researcher & Data Scientist</title>
+  <meta name="description"
+    content="Academic portfolio of Charan Selva Dhanush R — AI Researcher specializing in White Box Polynomial Neural Networks, Explainable AI, and Transparent Machine Learning." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="/src/style.css" />
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
@@ -20,8 +25,10 @@
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#thesis">Research</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#interests">Research Interests</a></li>
+        <li><a href="#thesis">Thesis</a></li>
+        <li><a href="#publications">Publications & Work</a></li>
+        <li><a href="#experience">Positions</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -32,17 +39,23 @@
   <section class="hero" id="hero">
     <canvas id="hero-canvas"></canvas>
     <div class="hero-content">
-      <div class="hero-tag anim-reveal">Data Scientist · AI Researcher · CEO</div>
+      <div class="hero-tag anim-reveal">AI Researcher · Data Scientist · CEO, Intinf</div>
       <h1 class="hero-title anim-reveal">
         <span class="hero-name">Charan Selva</span>
         <span class="hero-name accent">Dhanush R</span>
       </h1>
       <p class="hero-subtitle anim-reveal">
-        Building transparent AI systems through <em>White Box Polynomial Neural Networks</em> — where every prediction is mathematically explainable.
+        Researching <em>transparency in neural computation</em> through White Box Polynomial Neural Networks — where
+        every prediction is a traceable mathematical expression.
       </p>
+      <div class="hero-affiliations anim-reveal">
+        <span class="affiliation">B.E. Computer Science, CIT Coimbatore</span>
+        <span class="affiliation-divider">→</span>
+        <span class="affiliation">MS Informatics (AI), University of Zurich</span>
+      </div>
       <div class="hero-cta anim-reveal">
-        <a href="#thesis" class="btn btn-primary">Explore My Research</a>
-        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        <a href="#thesis" class="btn btn-primary">View Research</a>
+        <a href="#publications" class="btn btn-ghost">Publications & Work</a>
       </div>
     </div>
     <div class="scroll-indicator anim-reveal">
@@ -51,65 +64,165 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About Section — Academic Bio -->
   <section class="section" id="about">
     <div class="container">
       <div class="section-header anim-reveal">
-        <span class="section-tag">Introduction</span>
-        <h2 class="section-title">Bridging Academia<br/>& Industry</h2>
+        <span class="section-tag">Curriculum Vitae</span>
+        <h2 class="section-title">About the<br />Researcher</h2>
       </div>
-      <div class="about-grid">
-        <div class="about-card glass-card anim-reveal">
-          <div class="about-icon">🎓</div>
-          <h3>Academic Path</h3>
-          <p>Final year Computer Science student at <strong>Coimbatore Institute of Technology (CIT)</strong>, transitioning to an <strong>MS in Informatics — Artificial Intelligence</strong> at the <strong>University of Zurich (UZH)</strong>.</p>
+      <div class="bio-layout">
+        <div class="bio-main glass-card anim-reveal">
+          <p class="bio-lead">I am a final-year Computer Science undergraduate at the <strong>Coimbatore Institute of
+              Technology (CIT)</strong>, admitted to the <strong>MS in Informatics — Artificial Intelligence</strong>
+            program at the <strong>University of Zurich (UZH)</strong> for Fall 2026.</p>
+          <p>My research centers on <strong>interpretable deep learning</strong>, specifically developing <em>White Box
+              Polynomial Neural Networks</em> that replace opaque activation functions with explicit polynomial
+            expansions — enabling complete mathematical traceability of every prediction.</p>
+          <p>Beyond research, I serve as <strong>CEO of Intinf</strong>, an enterprise software company I founded to
+            build production-grade systems (billing, inventory, infrastructure) for businesses. I also lead
+            <strong>Magnus 2026</strong>, CIT's flagship technical symposium, as its President.</p>
         </div>
-        <div class="about-card glass-card anim-reveal">
-          <div class="about-icon">🏢</div>
-          <h3>CEO, Intinf</h3>
-          <p>Leading <strong>Intinf</strong> — an enterprise solutions company delivering full-stack systems including <strong>inventory management</strong>, <strong>automated billing</strong>, and <strong>scalable infrastructure</strong> for businesses.</p>
+        <div class="bio-sidebar">
+          <div class="bio-fact glass-card anim-reveal">
+            <div class="bio-fact-label">Education</div>
+            <div class="bio-fact-value">B.E. Computer Science<br /><span class="text-muted">CIT, Coimbatore ·
+                2022–2026</span></div>
+            <div class="bio-fact-value" style="margin-top: 12px;">MS Informatics (AI)<br /><span class="text-muted">UZH,
+                Zurich · Fall 2026</span></div>
+          </div>
+          <div class="bio-fact glass-card anim-reveal">
+            <div class="bio-fact-label">Languages</div>
+            <div class="bio-fact-value">English · Tamil · Hindi<br /><span class="text-muted">Learning: French 🇫🇷 ·
+                German 🇩🇪</span></div>
+          </div>
+          <div class="bio-fact glass-card anim-reveal">
+            <div class="bio-fact-label">Interests</div>
+            <div class="bio-fact-value">Explainable AI · Polynomial Networks · Scalable Systems · Alpine Linux</div>
+          </div>
         </div>
-        <div class="about-card glass-card anim-reveal">
-          <div class="about-icon">🔬</div>
-          <h3>Research Focus</h3>
-          <p>Pioneering <strong>transparency in AI</strong> through White Box Polynomial Neural Networks — making machine learning decisions mathematically interpretable and fully auditable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Interests Section -->
+  <section class="section section-dark" id="interests">
+    <div class="container">
+      <div class="section-header anim-reveal">
+        <span class="section-tag">Research Interests</span>
+        <h2 class="section-title">Areas of<br />Investigation</h2>
+      </div>
+      <div class="interests-grid">
+        <div class="interest-card glass-card anim-reveal">
+          <div class="interest-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+            </svg>
+          </div>
+          <h3>Explainable AI (XAI)</h3>
+          <p>Developing neural architectures where decisions are inherently interpretable — not post-hoc approximations,
+            but structurally transparent models whose reasoning is mathematically provable.</p>
+          <div class="interest-keywords">
+            <span>Interpretability</span><span>Trustworthy AI</span><span>Regulatory Compliance</span>
+          </div>
+        </div>
+        <div class="interest-card glass-card anim-reveal">
+          <div class="interest-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4h16v16H4z" />
+              <path d="M4 12h16M12 4v16M8 8h.01M16 8h.01M8 16h.01M16 16h.01" />
+            </svg>
+          </div>
+          <h3>Polynomial Neural Networks</h3>
+          <p>Replacing traditional activation functions (ReLU, Sigmoid) with learnable polynomial expansions
+            (degree-<em>n</em>) that preserve representational richness while exposing the exact transformation at every
+            layer.</p>
+          <div class="interest-keywords">
+            <span>PNN Architecture</span><span>Polynomial Expansion</span><span>White Box Models</span>
+          </div>
+        </div>
+        <div class="interest-card glass-card anim-reveal">
+          <div class="interest-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0-4h18" />
+            </svg>
+          </div>
+          <h3>Mathematical Foundations of ML</h3>
+          <p>Investigating the theoretical underpinnings of learning algorithms — function approximation, convergence
+            guarantees, and the algebraic structure of deep network representations.</p>
+          <div class="interest-keywords">
+            <span>Approximation Theory</span><span>Convergence Analysis</span><span>Algebraic ML</span>
+          </div>
+        </div>
+        <div class="interest-card glass-card anim-reveal">
+          <div class="interest-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+              <path d="M7 8l3 3-3 3M12 14h4" />
+            </svg>
+          </div>
+          <h3>Scalable Systems Engineering</h3>
+          <p>Designing and deploying production infrastructure — from containerized microservices on Alpine Linux to
+            automated CI/CD pipelines — ensuring research prototypes translate to robust, real-world systems.</p>
+          <div class="interest-keywords">
+            <span>Docker</span><span>Alpine Linux</span><span>Infrastructure as Code</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Thesis Spotlight Section -->
-  <section class="section section-dark" id="thesis">
+  <section class="section" id="thesis">
     <div class="container">
       <div class="section-header anim-reveal">
-        <span class="section-tag">Research Spotlight</span>
-        <h2 class="section-title">White Box Polynomial<br/>Neural Networks</h2>
+        <span class="section-tag">Undergraduate Thesis</span>
+        <h2 class="section-title">White Box Polynomial<br />Neural Networks</h2>
+        <p class="section-desc anim-reveal">B.E. Computer Science Thesis · Coimbatore Institute of Technology ·
+          2025–2026</p>
       </div>
       <div class="thesis-layout">
         <div class="thesis-viz anim-reveal">
           <canvas id="thesis-canvas"></canvas>
-          <div class="viz-label">Interactive PNN Visualization — hover to explore</div>
+          <div class="viz-label">Interactive PNN Architecture — hover to explore data flow</div>
         </div>
         <div class="thesis-content">
+          <div class="thesis-abstract glass-card anim-reveal">
+            <h3>Abstract</h3>
+            <p>This work proposes a class of neural networks in which every computational unit is expressed as an
+              explicit polynomial function, yielding models whose predictions are fully decomposable into interpretable
+              terms. Unlike conventional "black box" networks, White Box PNNs expose the exact mathematical
+              transformation at each layer, enabling domain experts and regulators to audit, verify, and trust model
+              outputs without reliance on post-hoc explanation methods.</p>
+          </div>
           <div class="thesis-point anim-reveal">
             <div class="thesis-num">01</div>
             <div>
-              <h3>Mathematical Transparency</h3>
-              <p>Every neuron's computation is expressed as an explicit polynomial function — no hidden "black box" transformations. The model's decision path is fully traceable.</p>
+              <h3>Structural Transparency</h3>
+              <p>Each neuron's computation is an explicit polynomial — the model's decision path is fully traceable from
+                input to output, eliminating the need for approximation-based interpretability tools like LIME or SHAP.
+              </p>
             </div>
           </div>
           <div class="thesis-point anim-reveal">
             <div class="thesis-num">02</div>
             <div>
-              <h3>Polynomial Activation</h3>
-              <p>Traditional activation functions are replaced with learnable polynomial expansions, providing richer representational power while maintaining interpretability.</p>
+              <h3>Learnable Polynomial Activations</h3>
+              <p>Traditional activation functions are replaced with degree-<em>n</em> polynomial expansions whose
+                coefficients are learned during training, providing richer representational capacity while maintaining
+                closed-form expressions.</p>
             </div>
           </div>
           <div class="thesis-point anim-reveal">
             <div class="thesis-num">03</div>
             <div>
-              <h3>Auditable Predictions</h3>
-              <p>Each output can be decomposed into contributing polynomial terms — enabling researchers and regulators to understand <em>why</em> a model produces a specific result.</p>
+              <h3>Decomposable Predictions</h3>
+              <p>Every output can be algebraically decomposed into contributing polynomial terms — allowing researchers
+                and regulators to quantify the influence of each input feature on the final prediction.</p>
             </div>
           </div>
         </div>
@@ -117,50 +230,101 @@
     </div>
   </section>
 
-  <!-- Experience Section -->
+  <!-- Publications & Work Section -->
+  <section class="section section-dark" id="publications">
+    <div class="container">
+      <div class="section-header anim-reveal">
+        <span class="section-tag">Selected Work</span>
+        <h2 class="section-title">Publications<br />& Projects</h2>
+      </div>
+      <div class="publications-list">
+        <div class="pub-item glass-card anim-reveal">
+          <div class="pub-type">Thesis</div>
+          <h3 class="pub-title">White Box Polynomial Neural Networks: Structurally Transparent Deep Learning via
+            Learnable Polynomial Activations</h3>
+          <div class="pub-authors"><strong>Charan Selva Dhanush R</strong></div>
+          <div class="pub-venue">B.E. Thesis, Department of Computer Science, Coimbatore Institute of Technology, 2026
+          </div>
+          <p class="pub-desc">Proposes a novel neural architecture family replacing opaque activations with explicit
+            polynomial expansions, enabling closed-form interpretability without sacrificing predictive performance.</p>
+          <div class="pub-tags">
+            <span>Explainable AI</span><span>Polynomial Networks</span><span>Interpretability</span>
+          </div>
+        </div>
+
+        <div class="pub-item glass-card anim-reveal">
+          <div class="pub-type">Project</div>
+          <h3 class="pub-title">Intinf Enterprise Platform — Full-stack Billing, Inventory & Infrastructure System</h3>
+          <div class="pub-authors"><strong>Charan Selva Dhanush R</strong> (Architect & Lead Developer)</div>
+          <div class="pub-venue">Intinf · Production System · 2024–Present</div>
+          <p class="pub-desc">Designed and deployed a modular enterprise platform encompassing automated billing
+            engines, real-time inventory tracking, and containerized server infrastructure on Alpine Linux, serving
+            multiple business clients.</p>
+          <div class="pub-tags">
+            <span>Full-stack</span><span>System Architecture</span><span>Docker</span><span>Alpine Linux</span>
+          </div>
+        </div>
+
+        <div class="pub-item glass-card anim-reveal">
+          <div class="pub-type">Project</div>
+          <h3 class="pub-title">Mathematical Mesh Visualization — Interactive Three.js Neural Network Explorer</h3>
+          <div class="pub-authors"><strong>Charan Selva Dhanush R</strong></div>
+          <div class="pub-venue">Open Source · 2026</div>
+          <p class="pub-desc">An interactive web-based visualization of polynomial neural network architectures using
+            Three.js, featuring real-time data-flow animation and mouse-driven parallax to aid in understanding PNN
+            computation graphs.</p>
+          <div class="pub-tags">
+            <span>Visualization</span><span>Three.js</span><span>Science Communication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic & Industry Positions -->
   <section class="section" id="experience">
     <div class="container">
       <div class="section-header anim-reveal">
-        <span class="section-tag">Experience</span>
-        <h2 class="section-title">Building Systems<br/>That Scale</h2>
+        <span class="section-tag">Positions</span>
+        <h2 class="section-title">Academic &<br />Industry Roles</h2>
       </div>
-      <div class="bento-grid">
-        <div class="bento-card bento-large glass-card tilt-card anim-reveal" id="exp-intinf">
-          <div class="bento-tag">CEO & Founder</div>
-          <h3>Intinf</h3>
-          <p>Architecting enterprise-grade full-stack solutions: automated billing engines, real-time inventory tracking, and scalable server infrastructure serving businesses across industries.</p>
-          <div class="bento-tech">
-            <span>Full-stack Development</span>
-            <span>System Architecture</span>
-            <span>Business Intelligence</span>
+      <div class="positions-timeline">
+        <div class="position-item anim-reveal">
+          <div class="position-period">2024 — Present</div>
+          <div class="position-details glass-card tilt-card">
+            <div class="position-role">CEO & Founder</div>
+            <h3>Intinf</h3>
+            <p>Founded and lead an enterprise solutions company delivering production-grade full-stack systems.
+              Architect of automated billing engines, real-time inventory platforms, and scalable server infrastructure
+              on Alpine Linux with Docker.</p>
           </div>
         </div>
-        <div class="bento-card glass-card tilt-card anim-reveal" id="exp-magnus">
-          <div class="bento-tag">President</div>
-          <h3>Magnus 2026</h3>
-          <p>Leading CIT's flagship technical symposium — orchestrating cross-functional teams, managing budgets, and curating a platform for innovation.</p>
-          <div class="bento-tech">
-            <span>Leadership</span>
-            <span>Event Management</span>
+        <div class="position-item anim-reveal">
+          <div class="position-period">2025 — 2026</div>
+          <div class="position-details glass-card tilt-card">
+            <div class="position-role">President</div>
+            <h3>Magnus 2026 — CIT Technical Symposium</h3>
+            <p>Leading CIT's flagship technical symposium — managing cross-functional teams of 100+ volunteers,
+              overseeing budgets, curating technical workshops, and organizing competitions for 2000+ participants.</p>
           </div>
         </div>
-        <div class="bento-card glass-card tilt-card anim-reveal" id="exp-research">
-          <div class="bento-tag">Researcher</div>
-          <h3>AI Research</h3>
-          <p>Developing novel White Box PNN architectures with a focus on mathematical interpretability and transparency in neural network decision-making.</p>
-          <div class="bento-tech">
-            <span>Deep Learning</span>
-            <span>Mathematical Modeling</span>
+        <div class="position-item anim-reveal">
+          <div class="position-period">2025 — 2026</div>
+          <div class="position-details glass-card tilt-card">
+            <div class="position-role">Undergraduate Researcher</div>
+            <h3>White Box PNN — CIT, Department of Computer Science</h3>
+            <p>Conducting thesis research on structurally transparent neural networks under faculty supervision.
+              Developing novel polynomial activation architectures and benchmarking against standard deep learning
+              baselines.</p>
           </div>
         </div>
-        <div class="bento-card glass-card tilt-card anim-reveal" id="exp-systems">
-          <div class="bento-tag">Systems Engineer</div>
-          <h3>Infrastructure</h3>
-          <p>Deploying and managing production environments on Alpine Linux with Docker containerization, ensuring uptime and security at scale.</p>
-          <div class="bento-tech">
-            <span>Alpine Linux</span>
-            <span>Docker</span>
-            <span>Server Management</span>
+        <div class="position-item anim-reveal">
+          <div class="position-period">Fall 2026</div>
+          <div class="position-details glass-card tilt-card">
+            <div class="position-role">Incoming MS Student</div>
+            <h3>University of Zurich — Department of Informatics</h3>
+            <p>Admitted to the MS in Informatics with specialization in Artificial Intelligence. Research interests:
+              explainable AI, polynomial neural architectures, and mathematical foundations of machine learning.</p>
           </div>
         </div>
       </div>
@@ -171,21 +335,23 @@
   <section class="section section-dark" id="skills">
     <div class="container">
       <div class="section-header anim-reveal">
-        <span class="section-tag">Expertise</span>
-        <h2 class="section-title">Technical<br/>Proficiencies</h2>
+        <span class="section-tag">Technical Expertise</span>
+        <h2 class="section-title">Methods &<br />Technologies</h2>
       </div>
       <div class="skills-grid">
         <div class="skill-group glass-card anim-reveal">
-          <h3>AI & Machine Learning</h3>
+          <h3>Research & AI/ML</h3>
           <div class="skill-items">
             <div class="skill-item">Polynomial Neural Networks</div>
+            <div class="skill-item">Explainable AI / XAI</div>
             <div class="skill-item">Deep Learning</div>
+            <div class="skill-item">Model Interpretability</div>
             <div class="skill-item">Python</div>
             <div class="skill-item">PyTorch</div>
             <div class="skill-item">TensorFlow</div>
             <div class="skill-item">Scikit-learn</div>
             <div class="skill-item">NumPy & Pandas</div>
-            <div class="skill-item">Model Interpretability</div>
+            <div class="skill-item">Matplotlib & Visualization</div>
           </div>
         </div>
         <div class="skill-group glass-card anim-reveal">
@@ -205,11 +371,11 @@
           <h3>Systems & Infrastructure</h3>
           <div class="skill-items">
             <div class="skill-item">Alpine Linux</div>
-            <div class="skill-item">Docker</div>
-            <div class="skill-item">Server Management</div>
+            <div class="skill-item">Docker & Containerization</div>
+            <div class="skill-item">Server Administration</div>
             <div class="skill-item">Nginx</div>
             <div class="skill-item">Shell Scripting</div>
-            <div class="skill-item">Networking</div>
+            <div class="skill-item">Networking & Security</div>
           </div>
         </div>
       </div>
@@ -221,25 +387,34 @@
     <div class="container">
       <div class="footer-content anim-reveal">
         <span class="section-tag">Contact</span>
-        <h2 class="section-title">Let's Connect</h2>
-        <p class="footer-text">Open to research collaborations, speaking opportunities, and conversations about the future of transparent AI.</p>
+        <h2 class="section-title">Reach Out</h2>
+        <p class="footer-text">Open to research collaborations, conference speaking, graduate research opportunities,
+          and conversations about transparency in AI.</p>
         <div class="footer-links">
-          <a href="https://www.linkedin.com/in/charan-selva-dhanush-b87761284/" target="_blank" rel="noopener" class="btn btn-primary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <a href="https://www.linkedin.com/in/charan-selva-dhanush-b87761284/" target="_blank" rel="noopener"
+            class="btn btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
             LinkedIn
           </a>
           <a href="https://github.com/CharanR04" target="_blank" rel="noopener" class="btn btn-ghost">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
             GitHub
           </a>
         </div>
       </div>
       <div class="footer-bar">
-        <p>&copy; 2026 Charan Selva Dhanush R. Crafted with precision.</p>
+        <p>&copy; 2026 Charan Selva Dhanush R. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>
