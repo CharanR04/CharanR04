@@ -43,7 +43,9 @@
 }
 
 /* --- Reset & Base --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -246,6 +248,27 @@ img {
   flex-wrap: wrap;
 }
 
+.hero-affiliations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.affiliation {
+  font-family: var(--font-mono);
+  font-size: clamp(0.7rem, 1vw, 0.8rem);
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+}
+
+.affiliation-divider {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
+
 .scroll-indicator {
   position: absolute;
   bottom: 40px;
@@ -286,8 +309,13 @@ img {
 }
 
 @keyframes scrollDown {
-  0% { top: -100%; }
-  100% { top: 100%; }
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 100%;
+  }
 }
 
 /* --- Buttons --- */
@@ -378,6 +406,19 @@ img {
   letter-spacing: -0.02em;
 }
 
+.section-desc {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  margin-top: 16px;
+  font-style: italic;
+}
+
+/* --- Helpers --- */
+.text-muted {
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+}
+
 /* --- Glass Card --- */
 .glass-card {
   background: var(--color-surface);
@@ -396,33 +437,101 @@ img {
   border-color: rgba(0, 0, 0, 0.1);
 }
 
-/* --- About Grid --- */
-.about-grid {
+/* --- Bio Layout (Academic About) --- */
+.bio-layout {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.bio-main p {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.bio-main p:last-child {
+  margin-bottom: 0;
+}
+
+.bio-lead {
+  font-size: 1.05rem !important;
+  color: var(--color-text) !important;
+  line-height: 1.8 !important;
+}
+
+.bio-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bio-fact {
+  padding: clamp(20px, 3vw, 28px) !important;
+}
+
+.bio-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-text-light);
+  margin-bottom: 10px;
+}
+
+.bio-fact-value {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* --- Research Interests Grid --- */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
-.about-card {
-  text-align: center;
+.interest-card {
+  position: relative;
 }
 
-.about-icon {
-  font-size: 2.5rem;
+.interest-icon {
+  color: var(--color-text-muted);
   margin-bottom: 20px;
+  opacity: 0.6;
 }
 
-.about-card h3 {
-  font-size: 1.2rem;
+.interest-card h3 {
+  font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 12px;
   letter-spacing: -0.01em;
 }
 
-.about-card p {
-  font-size: 0.92rem;
+.interest-card p {
+  font-size: 0.9rem;
   color: var(--color-text-muted);
-  line-height: 1.7;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.interest-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interest-keywords span {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  padding: 5px 12px;
+  border-radius: var(--radius-xl);
+  background: rgba(0, 0, 0, 0.03);
+  color: var(--color-text-light);
+  border: 1px solid var(--color-border);
 }
 
 /* --- Thesis Section --- */
@@ -459,6 +568,27 @@ img {
   white-space: nowrap;
 }
 
+.thesis-abstract {
+  margin-bottom: 32px;
+}
+
+.thesis-abstract h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-light);
+}
+
+.thesis-abstract p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  font-style: italic;
+}
+
 .thesis-point {
   display: flex;
   gap: 20px;
@@ -487,54 +617,124 @@ img {
   line-height: 1.7;
 }
 
-/* --- Bento Grid --- */
-.bento-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+/* --- Publications List --- */
+.publications-list {
+  display: flex;
+  flex-direction: column;
   gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.bento-large {
-  grid-column: span 2;
+.pub-item {
+  position: relative;
 }
 
-.bento-tag {
+.pub-type {
   font-family: var(--font-mono);
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--color-text-light);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  padding: 4px 12px;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: var(--radius-xl);
+  display: inline-block;
 }
 
-.bento-card h3 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 12px;
+.pub-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 8px;
   letter-spacing: -0.01em;
 }
 
-.bento-card p {
-  font-size: 0.92rem;
+.pub-authors {
+  font-size: 0.88rem;
   color: var(--color-text-muted);
-  line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
 }
 
-.bento-tech {
+.pub-venue {
+  font-size: 0.82rem;
+  color: var(--color-text-light);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.pub-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.pub-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.bento-tech span {
-  font-size: 0.75rem;
+.pub-tags span {
+  font-size: 0.72rem;
   font-family: var(--font-mono);
-  padding: 6px 14px;
+  padding: 5px 12px;
   border-radius: var(--radius-xl);
-  background: rgba(0, 0, 0, 0.04);
-  color: var(--color-text-muted);
+  background: rgba(0, 0, 0, 0.03);
+  color: var(--color-text-light);
   border: 1px solid var(--color-border);
+}
+
+/* --- Positions Timeline --- */
+.positions-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.position-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.position-period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  padding-top: clamp(28px, 4vw, 40px);
+  text-align: right;
+}
+
+.position-details {
+  position: relative;
+}
+
+.position-role {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-text-light);
+  margin-bottom: 8px;
+}
+
+.position-details h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.position-details p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
 }
 
 /* --- Skills Grid --- */
@@ -620,12 +820,14 @@ img {
   opacity: 1;
   transform: translateY(0);
   transition: opacity var(--duration-slow) var(--ease-out),
-              transform var(--duration-slow) var(--ease-out);
+    transform var(--duration-slow) var(--ease-out);
 }
 
 /* --- Responsive --- */
 @media (max-width: 900px) {
-  .about-grid,
+
+  .bio-layout,
+  .interests-grid,
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -638,12 +840,18 @@ img {
     aspect-ratio: 4/3;
   }
 
-  .bento-grid {
+  .position-item {
     grid-template-columns: 1fr;
+    gap: 8px;
   }
 
-  .bento-large {
-    grid-column: span 1;
+  .position-period {
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .nav-links {
+    gap: 20px;
   }
 }
 
