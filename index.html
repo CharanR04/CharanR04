@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Charan Selva Dhanush Ravi | AI Researcher</title>
-  <meta name="description" content="AI Researcher specialising in Computer Vision, NLP, Graph Neural Networks, Reinforcement Learning and Interpretable Models — including Polynomial Neural Networks." />
+  <meta name="description" content="AI Researcher specialising in Computer Vision, NLP, Graph Neural Networks, Reinforcement Learning and Interpretable Models. Incoming MSc at University of Zurich (UZH) — September 2026." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -260,6 +260,18 @@ section{padding:6rem 2.5rem;}
 .skill-pill{font-size:.73rem;padding:.25rem .65rem;background:var(--tag-bg);color:var(--tag-txt);border:1px solid var(--card-border);border-radius:100px;font-weight:500;transition:all var(--transition);}
 .skill-pill:hover{background:var(--acc);color:#fff;border-color:var(--acc);}
 
+/* ════════════════════════════ UZH CARD ═════════════════════════ */
+.uzh-card{background:var(--card);border:1px solid var(--acc);border-radius:16px;padding:1.3rem 1.75rem;margin-bottom:2.5rem;display:flex;align-items:center;gap:1.35rem;backdrop-filter:blur(20px);box-shadow:0 0 0 1px var(--acc-glow),var(--shadow);position:relative;overflow:hidden;transition:all var(--transition);}
+.uzh-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--acc-glow) 0%,transparent 65%);pointer-events:none;}
+.uzh-card:hover{transform:translateY(-3px);box-shadow:0 0 0 1px var(--acc),var(--shadow-hover);}
+.uzh-icon{font-size:2.1rem;flex-shrink:0;z-index:1;}
+.uzh-info{flex:1;z-index:1;}
+.uzh-label{font-family:'JetBrains Mono',monospace;font-size:.67rem;letter-spacing:.15em;color:var(--acc);text-transform:uppercase;margin-bottom:.22rem;}
+.uzh-name{font-size:1.05rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.18rem;}
+.uzh-sub{font-size:.78rem;color:var(--txt2);}
+.uzh-pill{display:inline-flex;align-items:center;gap:.45rem;font-size:.72rem;font-weight:600;padding:.32rem .9rem;border-radius:100px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.22);color:#4ADE80;white-space:nowrap;flex-shrink:0;z-index:1;}
+.uzh-pill .dot{width:5px;height:5px;border-radius:50%;background:#22C55E;animation:pulseDot 2s infinite;}
+
 /* ════════════════════════════ AWARDS ═══════════════════════════ */
 .awards-bg{background:var(--bg2);transition:background var(--transition);position:relative;overflow:hidden;}
 .awards-certs-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;}
@@ -370,7 +382,7 @@ footer{background:var(--bg2);border-top:1px solid var(--hr);padding:2.25rem 2.5r
   <div class="hero-inner">
 
     <div class="hero-left">
-      <div class="hero-badge"><span class="pulse-dot"></span>Available for Research Collaborations</div>
+      <div class="hero-badge"><span class="pulse-dot"></span>Incoming MSc · University of Zurich · Sep 2026</div>
       <h1 class="hero-name">
         <span class="line1">Charan Selva</span>
         <span class="line2" data-text="Dhanush Ravi">Dhanush Ravi</span>
@@ -379,7 +391,7 @@ footer{background:var(--bg2);border-top:1px solid var(--hr);padding:2.25rem 2.5r
         AI Researcher · <strong>CV</strong> · <strong>NLP</strong> · <strong>GNN</strong> · <strong>RL</strong> · <strong>Interpretable Models</strong>
       </p>
       <p class="hero-desc">
-        Building AI that doesn't just predict — but <em>explains</em>. Advancing novel interpretable architectures, graph-based learning, and reinforcement-driven systems across research and applied domains.
+        Advancing novel neural architectures, graph-based learning, and vision systems across research and applied domains. Heading to <em>UZH Zurich</em> for my Masters in September 2026.
       </p>
       <div class="hero-cta">
         <a href="#research-vision" class="btn-primary"><i class="fa-solid fa-atom"></i> Research Vision</a>
@@ -387,6 +399,7 @@ footer{background:var(--bg2);border-top:1px solid var(--hr);padding:2.25rem 2.5r
       </div>
       <div class="hero-socials">
         <a href="https://github.com/CharanR04" target="_blank" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/charan-selva-dhanush-b87761284/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         <a href="mailto:charansd27@gmail.com" class="social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         <a href="tel:+919962524758" class="social-link" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
       </div>
@@ -505,10 +518,22 @@ footer{background:var(--bg2);border-top:1px solid var(--hr);padding:2.25rem 2.5r
     <div class="section-label">01 — Who I Am</div>
     <h2 class="section-title">About <span>Me</span></h2>
     <div class="section-line"></div>
+
+    <!-- UZH announcement -->
+    <div class="uzh-card reveal">
+      <div class="uzh-icon">🎓</div>
+      <div class="uzh-info">
+        <div class="uzh-label">Incoming · Masters Degree</div>
+        <div class="uzh-name">University of Zurich — UZH</div>
+        <div class="uzh-sub">MSc &nbsp;·&nbsp; Zurich, Switzerland &nbsp;·&nbsp; September 2026</div>
+      </div>
+      <div class="uzh-pill"><span class="dot"></span>Confirmed · Sep 2026</div>
+    </div>
+
     <div class="about-grid">
       <div class="about-text reveal">
         <div class="code-comment">// Exploring AI across vision, language, graphs, policy & beyond.</div>
-        <p>I'm a final-year <strong>B.Tech student in Computer Science (AI & ML)</strong> at Chennai Institute of Technology, with a CGPA of <strong>8.09/10</strong>. My research spans Computer Vision, NLP, Graph Neural Networks, Reinforcement Learning, and Interpretable Models — exploring how machines can perceive, understand, reason, and act across complex real-world problems.</p>
+        <p>I'm a final-year <strong>B.Tech student in Computer Science (AI & ML)</strong> at Chennai Institute of Technology, with a CGPA of <strong>8.2/10</strong>. I'll be joining the <strong>University of Zurich (UZH)</strong> for my Masters in September 2026. My research spans Computer Vision, NLP, Graph Neural Networks, Reinforcement Learning, and Interpretable Models — exploring how machines can perceive, understand, reason, and act across complex real-world problems.</p>
         <p>I've had the privilege of conducting research at <strong>NIT Tiruchirappalli</strong> (Multimodal VQA, IoT, Virtual Surgery) and <strong>Universiti Tunku Abdul Rahman, Malaysia</strong> (Stock Forecasting, Transformers).</p>
         <p>My current original research on <strong>White Box Polynomial Neural Networks</strong> is a novel architecture built without any traditional activation functions — the model's structure ensures each layer increases the polynomial degree of the entire network, making every learned relationship analytically extractable and fully interpretable.</p>
         <p>Outside research: <strong>Smart India Hackathon 2025 Finalist</strong> and active language learner (German A1 — Goethe Institut).</p>
@@ -516,7 +541,7 @@ footer{background:var(--bg2);border-top:1px solid var(--hr);padding:2.25rem 2.5r
       <div class="about-stats reveal">
         <div class="stat-card"><div class="num" data-target="3">0</div><div class="lbl">Research Internships</div></div>
         <div class="stat-card"><div class="num" data-target="2">0</div><div class="lbl">Publications</div></div>
-        <div class="stat-card"><div class="num" data-target="8" data-decimal=".09">0</div><div class="lbl">CGPA / 10</div></div>
+        <div class="stat-card"><div class="num" data-target="8" data-decimal=".2">0</div><div class="lbl">CGPA / 10</div></div>
         <div class="stat-card"><div class="num" data-target="5">0</div><div class="lbl">Major Projects</div></div>
       </div>
     </div>
@@ -729,9 +754,10 @@ footer{background:var(--bg2);border-top:1px solid var(--hr);padding:2.25rem 2.5r
     <div class="contact-wrapper">
       <div class="contact-text reveal">
         <h3>Open to Research & Collaborations</h3>
-        <p>Whether you want to discuss interpretable AI, graph learning, RL, or novel neural architectures — or just want to connect — my inbox is always open.</p>
+        <p>Whether you want to discuss AI research, novel architectures, or potential collaborations — or just want to connect before I head to UZH — my inbox is always open.</p>
         <div class="contact-links">
           <a href="mailto:charansd27@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i><span>charansd27@gmail.com</span></a>
+          <a href="https://www.linkedin.com/in/charan-selva-dhanush-b87761284/" target="_blank" class="contact-link"><i class="fa-brands fa-linkedin-in"></i><span>linkedin.com/in/charan-selva-dhanush</span></a>
           <a href="https://github.com/CharanR04" target="_blank" class="contact-link"><i class="fa-brands fa-github"></i><span>github.com/CharanR04</span></a>
           <a href="tel:+919962524758" class="contact-link"><i class="fa-solid fa-phone"></i><span>+91 99625 24758</span></a>
         </div>
@@ -866,7 +892,8 @@ const termLines = [
   {type:'comment', text:'  ]'},
   {type:'key-val', key:'  latest',      val:'"White Box Polynomial Neural Networks"'},
   {type:'key-val', key:'  institution', val:'"Chennai Institute of Technology"'},
-  {type:'key-val', key:'  cgpa',        val:'8.09'},
+  {type:'key-val', key:'  cgpa',        val:'8.2'},
+  {type:'key-val', key:'  next',        val:'"University of Zurich — MSc · Sep 2026"'},
   {type:'key-val', key:'  status',      val:'"open_to_collaborate: true"'},
   {type:'prompt', cmd:'_'},
 ];
