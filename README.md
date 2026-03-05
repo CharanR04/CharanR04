@@ -1,14 +1,15 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E40AF,100:3B82F6&height=200&section=header&text=Charan%20Selva%20Dhanush%20Ravi&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=AI%20Researcher%20%7C%20ML%20Engineer%20%7C%20Computer%20Vision%20%26%20NLP&descAlignY=55&descSize=16" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E40AF,100:3B82F6&height=200&section=header&text=Charan%20Selva%20Dhanush%20Ravi&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=AI%20Researcher%20%7C%20Computer%20Vision%20%7C%20NLP%20%7C%20Graph%20Neural%20Networks&descAlignY=55&descSize=16" width="100%"/>
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&random=false&width=700&lines=Building+Interpretable+AI+Systems;Computer+Vision+%7C+NLP+%7C+LLMs;Research+Intern+%40+NIT+Trichy+%26+UTAR;Smart+India+Hackathon+2025+Finalist)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&random=false&width=750&lines=Building+AI+That+Sees%2C+Reads+%26+Reasons;CV+%7C+NLP+%7C+Graph+Neural+Networks+%7C+RL;Polynomial+Neural+Networks+—+White+Box+AI;Incoming+MSc+%40+University+of+Zurich+%7C+Sep+2026;Smart+India+Hackathon+2025+Finalist)](https://git.io/typing-svg)
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-3B82F6?style=for-the-badge&logo=vercel&logoColor=white)](https://charanr04.github.io/CharanR04)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/charan-selva-dhanush-b87761284/)
 [![Email](https://img.shields.io/badge/Email-charansd27%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:charansd27@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-CharanR04-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CharanR04)
 
@@ -18,42 +19,28 @@
 
 ## 🧠 About Me
 
-> *"To make meaningful contributions to the advancement of Artificial Intelligence by developing interpretable models that explain complex relationships such as human behaviour."*
+AI researcher with a focus on **Computer Vision, NLP, Graph Neural Networks, Reinforcement Learning, and Interpretable Models**. Currently building a novel **Polynomial Neural Network (PNN)** architecture — where every layer increases the polynomial degree of the model, making every weight fully extractable. No black boxes.
 
-I'm a **final-year B.Tech student** in Computer Science (AI & ML) at **Chennai Institute of Technology** (CGPA: 8.09/10), with hands-on research experience across **NIT Tiruchirappalli**, **Universiti Tunku Abdul Rahman (Malaysia)**, and the **Centre for Additive Manufacturing**.
-
-My work spans **Multimodal AI**, **Computer Vision**, **NLP**, **LLMs**, **IoT systems**, and **Deep Learning for materials science** — bridging interdisciplinary boundaries to build AI that is both powerful and interpretable.
+Incoming **MSc @ University of Zurich (UZH)** · September 2026 · CGPA: **8.2/10**
 
 ---
 
-## 🎓 Education
+## 🔬 Research
 
-| Degree | Institution | Year | Score |
-|--------|-------------|------|-------|
-| B.Tech – CS (AI & ML) | Chennai Institute of Technology, Chennai | 2022 – 2026 | CGPA: 8.09/10 |
-| Class XII – CBSE | Maharishi Vidya Mandir, Chennai | 2020 – 2022 | 74.2% (371/500) |
+### NIT Tiruchirappalli *(05/2024 – 05/2025)*
+- Built a **multimodal VQA transformer pipeline** to assist visually impaired individuals
+- Developed an **IoT soil saturation automation** system using ESP32 with remote monitoring
+- Designed a **Unity-based virtual surgery interface** using OCR to extract and place tumour data on simulated anatomy
 
----
+### Universiti Tunku Abdul Rahman, Malaysia *(07/2024 – 09/2024)*
+- Systematic review of ML/DL models for **stock market forecasting**
+- Designed a **multimodal Transformer** leveraging attention mechanisms for stock trend prediction
+- Published at **ICSGRC 2025** (IEEE)
 
-## 💼 Research Experience
-
-### 🔬 Research Intern — NIT Tiruchirappalli *(05/2024 – 05/2025)*
-**Term I** | Multimodal Visual Question Answering
-- Developed a multimodal VQA transformer pipeline to assist visually impaired individuals
-
-**Term II** | Soil Saturation Automation & Virtual Surgery
-- Built an IoT system using ESP32 to automate and remotely monitor soil saturation levels
-- Designed a Unity-based virtual surgery interface using OCR to extract and place tumour data on simulated anatomy
-
-### 🌏 Research Intern — Universiti Tunku Abdul Rahman, Malaysia *(07/2024 – 09/2024)*
-- Conducted a systematic review of ML/DL models for stock market forecasting
-- Designed a multimodal **Transformer-based model** leveraging attention mechanisms for enhanced stock trend prediction
-- Published findings at **ICSGRC 2025**
-
-### 🏭 Undergraduate Researcher — Centre for Additive Manufacturing *(10/2022 – Present)*
-- Analysed 3D printing parameters and their impact on material properties
-- Developed LSTM-based deep neural networks achieving **>95% accuracy** for compressive strength prediction
-- Integrated AI into additive manufacturing; contributed to patents and research publications
+### Centre for Additive Manufacturing *(10/2022 – Present)*
+- Developed **LSTM-based deep neural networks** achieving >95% accuracy for compressive strength prediction in 3D-printed parts
+- Computer vision pipeline for **real-time layer height anomaly detection** in additive manufacturing
+- Contributed to patents and publications in materials science AI
 
 ---
 
@@ -63,39 +50,39 @@ My work spans **Multimodal AI**, **Computer Vision**, **NLP**, **LLMs**, **IoT s
 <tr>
 <td width="50%">
 
-### 🌱 Remote Sensing & Soil Moisture Monitoring
-*(02/2025 – 05/2025)*
-- IoT-based system using **ESP32** to sense and control soil moisture
-- Remote monitoring interface for real-time data access and processing
-- Applied in structural foundation strength management
+### 🔷 Polynomial Neural Networks (PNN)
+*Active Research*
+- Novel architecture removing all activation functions
+- Each layer increases the polynomial degree of the model
+- Fully analytically extractable — complete white-box interpretability
 
 </td>
 <td width="50%">
 
-### 💧 Water Supply & Demand Forecasting
-*(10/2024 – 12/2024)*
-- Dual **LSTM models** with **>95% accuracy** for water demand/supply forecasting
-- Analysed historical trends, seasonality and anomalies
-- Built an interactive dashboard for feature–output visualisation
+### 👁️ Visual Bot — Multimodal VQA
+*(05/2024 – 08/2024)*
+- Transformer-based VQA for visually impaired users
+- Multi-model workflow for image + language understanding
+- Fine-tuned with **ULMFiT** transfer learning
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 👁️ Visual Bot — Multimodal VQA
-*(05/2024 – 08/2024)*
-- Transformer-based VQA model for visually impaired individuals
-- Multi-model workflow for image + question understanding
-- Fine-tuned using **ULMFiT** transfer learning
+### 💧 Water Supply & Demand Forecasting
+*(10/2024 – 12/2024)*
+- Dual **LSTM models** with >95% accuracy
+- Analyses historical trends, seasonality and anomalies
+- Interactive dashboard for feature–output visualisation
 
 </td>
 <td width="50%">
 
 ### 🖨️ Layer Height Monitoring (Additive Mfg.)
 *(02/2023 – 05/2023)*
-- Computer vision pipeline to detect anomalies in 3D printing
-- Hybrid **PyTorch** model achieving **>90% accuracy** in real-time
+- Computer vision pipeline for 3D printing anomaly detection
+- Hybrid **PyTorch** model — >90% real-time accuracy
 - Integrated directly into the manufacturing process
 
 </td>
@@ -108,8 +95,8 @@ My work spans **Multimodal AI**, **Computer Vision**, **NLP**, **LLMs**, **IoT s
 
 | Title | Venue | Year |
 |-------|-------|------|
-| A Systematic Review of Stock Market Forecasting Utilizing Machine Learning and Deep Learning | **ICSGRC 2025** | 2025 |
-| Prediction of Compressive Strength in Additively Fabricated Parts Using LSTM-Based Neural Network | **Materials Today Communication** | 2023 |
+| [A Systematic Review of Stock Market Forecasting Utilizing Machine Learning and Deep Learning](https://ieeexplore.ieee.org/abstract/document/11159810/) | **ICSGRC 2025 (IEEE)** | 2025 |
+| [Prediction of Compressive Strength in Additively Fabricated Parts Using LSTM-Based Neural Network](https://www.sciencedirect.com/science/article/abs/pii/S2352492823018305) | **Materials Today Communication** | 2023 |
 
 ---
 
@@ -129,7 +116,6 @@ My work spans **Multimodal AI**, **Computer Vision**, **NLP**, **LLMs**, **IoT s
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 
 **Data & Web**
 
@@ -141,11 +127,11 @@ My work spans **Multimodal AI**, **Computer Vision**, **NLP**, **LLMs**, **IoT s
 
 **Specialisations**
 
-![Computer Vision](https://img.shields.io/badge/Computer%20Vision-5C3EE8?style=flat-square&logoColor=white)
-![NLP](https://img.shields.io/badge/NLP-3B82F6?style=flat-square&logoColor=white)
-![LLMs](https://img.shields.io/badge/Large%20Language%20Models-1E40AF?style=flat-square&logoColor=white)
-![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logoColor=black)
-![LSTM](https://img.shields.io/badge/LSTM-EE4C2C?style=flat-square&logoColor=white)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-5C3EE8?style=flat-square)
+![NLP](https://img.shields.io/badge/NLP-3B82F6?style=flat-square)
+![Graph Neural Networks](https://img.shields.io/badge/Graph%20Neural%20Networks-1E40AF?style=flat-square)
+![Reinforcement Learning](https://img.shields.io/badge/Reinforcement%20Learning-EE4C2C?style=flat-square)
+![Interpretable AI](https://img.shields.io/badge/Interpretable%20AI-059669?style=flat-square)
 
 </div>
 
@@ -153,12 +139,12 @@ My work spans **Multimodal AI**, **Computer Vision**, **NLP**, **LLMs**, **IoT s
 
 ## 🏆 Awards & Certifications
 
-| Type | Title | Issuer | Date |
-|------|-------|--------|------|
-| 🥇 Award | **Smart India Hackathon 2025** – Finalist | Government of India | Dec 2024 |
-| 📜 Certificate | Data Analysis | Google | — |
-| 📜 Certificate | Deep Learning | Udacity | — |
-| 🌍 Language | German A1 | Goethe Institut | — |
+| | Title | Issuer |
+|---|-------|--------|
+| 🥇 | **Smart India Hackathon 2025** — Finalist | Government of India |
+| 📜 | Data Analysis | Google |
+| 📜 | Deep Learning | Udacity |
+| 🌍 | German A1 | Goethe Institut |
 
 ---
 
@@ -177,6 +163,6 @@ My work spans **Multimodal AI**, **Computer Vision**, **NLP**, **LLMs**, **IoT s
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3B82F6,100:1E40AF&height=100&section=footer" width="100%"/>
 
-*"Intelligence is not just about accuracy — it's about understanding."*
+*Building AI that sees, reads, reasons — and explains itself.*
 
 </div>
