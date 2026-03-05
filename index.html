@@ -317,6 +317,61 @@ footer{background:var(--bg2);border-top:1px solid var(--hr);padding:2.25rem 2.5r
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 
+/* ════════════════════════════ DARK MODE GRADIENTS ══════════════ */
+[data-theme="dark"] .hero {
+  background:
+    radial-gradient(ellipse 70% 55% at 8% 2%,  rgba(29,78,216,0.30) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 35% at 92% 92%, rgba(14,165,233,0.13) 0%, transparent 50%),
+    linear-gradient(135deg,#020917 0%,#071428 55%,#0D1E3A 100%);
+}
+[data-theme="dark"] .exp-bg {
+  background:
+    radial-gradient(ellipse 60% 70% at -5% 50%,  rgba(29,78,216,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse 35% 30% at 105% 5%,  rgba(59,130,246,0.09) 0%, transparent 45%),
+    var(--bg2);
+}
+[data-theme="dark"] .pub-bg {
+  background:
+    radial-gradient(ellipse 55% 55% at 110% 80%, rgba(29,78,216,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 32% at 8%  5%,   rgba(59,130,246,0.08) 0%, transparent 50%),
+    var(--bg2);
+}
+[data-theme="dark"] .awards-bg {
+  background:
+    radial-gradient(ellipse 60% 55% at 108% 8%, rgba(29,78,216,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse 38% 30% at -5% 92%, rgba(59,130,246,0.08) 0%, transparent 45%),
+    var(--bg2);
+}
+[data-theme="dark"] #about {
+  background:
+    radial-gradient(ellipse 52% 48% at 100% 0%,   rgba(29,78,216,0.13) 0%, transparent 52%),
+    radial-gradient(ellipse 36% 32% at 3%  100%,  rgba(59,130,246,0.07) 0%, transparent 45%),
+    var(--bg);
+}
+[data-theme="dark"] #projects {
+  background:
+    radial-gradient(ellipse 52% 48% at 0%   100%, rgba(29,78,216,0.14) 0%, transparent 52%),
+    radial-gradient(ellipse 36% 30% at 98%  5%,   rgba(59,130,246,0.07) 0%, transparent 45%),
+    var(--bg);
+}
+[data-theme="dark"] #skills {
+  background:
+    radial-gradient(ellipse 65% 50% at 50% 0%,   rgba(29,78,216,0.12) 0%, transparent 55%),
+    radial-gradient(ellipse 38% 32% at 50% 100%, rgba(59,130,246,0.07) 0%, transparent 48%),
+    var(--bg);
+}
+[data-theme="dark"] #contact {
+  background:
+    radial-gradient(ellipse 52% 55% at -5%  50%, rgba(29,78,216,0.14) 0%, transparent 55%),
+    radial-gradient(ellipse 48% 42% at 105% 50%, rgba(59,130,246,0.09) 0%, transparent 50%),
+    var(--bg);
+}
+[data-theme="dark"] footer {
+  background:
+    radial-gradient(ellipse 80% 80% at 50% 120%, rgba(29,78,216,0.16) 0%, transparent 60%),
+    var(--bg2);
+}
+
 /* ════════════════════════════ RESPONSIVE ════════════════════════ */
 @media(max-width:900px){
   .hero-inner{grid-template-columns:1fr;}
